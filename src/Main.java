@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args){
         String[][] strArray = {{"1","2","3"},{"4","5","6"},{"7","8","9"}};
-        double[][] dbArray = {{1,2,3},{4,5,6,},{7,8,9,}};
+        double[][] dbArray = {{1,2,3},{4,5,6,},{7,8,9}};
 
         flip(strArray);
         for(String[] row : strArray){
