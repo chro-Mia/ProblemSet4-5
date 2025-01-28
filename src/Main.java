@@ -64,10 +64,10 @@ public class Main {
         int index = 0;
         for(int r = 0; r < newArray.length; r++){
             for(int c = 0; c < newArray[0].length; c++){
-                try{
+                if(index < vals.length){
                     newArray[r][c] = vals[index];
                 }
-                catch(IndexOutOfBoundsException e){
+                else{
                     newArray[r][c] = -1;
                 }
                 index++;
@@ -81,10 +81,10 @@ public class Main {
         int index = 0;
         for(int c = 0; c < newArray[0].length; c++){
             for(int r = 0; r < newArray.length; r++){
-                try{
+                if(index < vals.length){
                     newArray[r][c] = vals[index];
                 }
-                catch(ArrayIndexOutOfBoundsException e){
+                else{
                     newArray[r][c] = -1;
                 }
                 index++;
